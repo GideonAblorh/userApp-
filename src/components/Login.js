@@ -14,21 +14,17 @@ function Login(props) {
       <h1 className="login">Login Now</h1>
 
       <form className="login-form" onSubmit={handleSubmit}>
-        <div>
-          <label>Email</label>
+        <div className="textbox2">
           <input name="email" type="email" placeholder="email" />
         </div>
 
-        <div>
-          <label>Password</label>
+        <div className="textbox2">
           <input name="password" type="password" placeholder="password" />
         </div>
 
-        <hr />
-
-        <button type="submit">Login</button>
-
-        <he />
+        
+        <button className="btn2" type="submit">Login</button>
+        
 
         <button onClick={props.loginWithGoogle}>
           <img

@@ -31,7 +31,7 @@ export const loginWithEmail = (email, password) => {
   export const loginWithGoogle = (email, password) => {
     return (dispatch, state, { getFirebase }) => {
       let firebase = getFirebase();
-      let provider = new firebase.auth.GoogleAuthProvider()
+      let provider = new firebase.auth.GoogleAuthProvider();
       firebase
         .auth()
         .signInWithPopup(provider)

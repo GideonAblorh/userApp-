@@ -11,25 +11,20 @@ function Register(props) {
         props.registerWithEmail(email, password);
     }
   return (
-    <div>
-      <h1>Register Now</h1>
+    <div className="register-all">
+      <h1 className="register">Register Now</h1>
 
-      <form onSubmit={handleSubmit}>
-          <div>
-              <label>Email</label>
+      <form className="register-form" onSubmit={handleSubmit}>
+          <div className="textbox">
               <input name="email" type="email" placeholder="email"/>
           </div>
 
-          <div>
-              <label>Password</label>
+          <div className="textbox">
               <input name="password" type="password" placeholder="password"/>
           </div>
 
-          <hr/>
 
-          <button type="submit">Join</button>
-
-          <he/>
+          <button className="btn" type="submit">Join</button>
 
           <button onClick={props.loginWithGoogle}>
               <img src="https://cdn.vox-cdn.com/thumbor/Ous3VQj1sn4tvb3H13rIu8eGoZs=/0x0:2012x1341/1400x788/filters:focal(0x0:2012x1341):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg"

@@ -23,8 +23,7 @@ componentDidMount(){
   render() {
     return (
       <div className="App">
-        <h1>MY FAMILY DATA</h1>
-        <button onClick={this.props.logoutUser}>Logout</button>
+        <h1 className="name-head">MY FAMILY DATA</h1>
         <UserForm addUser={this} />
         <div className="App_user-info">
           {this.props.users.map((item, index) => {
@@ -40,6 +39,7 @@ componentDidMount(){
             );
           })}
         </div>
+        <button className="logout" onClick={this.props.logoutUser}>Logout</button>
       </div> 
     ); 
   }
